@@ -1,38 +1,362 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  'Roboto', sans-serif;
+  
+}
+
+::-webkit-scrollbar {
+  width: 14px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #e0f0ff; 
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #036dfc;
+  border-radius: 10px; 
+  border: 3px solid #e0f0ff; 
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #024bbd; 
+}
+
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Navigation styles */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 10px rgba(3, 119, 252, 0.24);
+  position: sticky;
+  top: 0;
+  background: #ffffffec;
+  z-index: 100;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav-logo {
+  width: 20%;
+  font-size: 10px;
+  padding: 10px;
+  text-align: left;
+  transition: 3s;
+}
+
+.nav-logo .Logo{
+  width: 50%;
+}
+.link {
+  text-decoration: none;
+  color: rgb(3, 119, 252);
+  font-weight: bold;
+ 
+}
+
+/* Menu icon for mobile */
+.menu-icon {
+  display: block; /* Show by default */
+  cursor: pointer;
+  font-size: 30px;
+  color: blue;
+  border: 2px solid;
+  padding: 0 10px;
+  border-radius: 6px;
+}
+
+/* Sidebar styles */
+.nav-links {
+  display: none; /* Hide by default */
+  flex-direction: column; /* Stack for mobile */
+  position: fixed; /* Fixed position */
+  top: 0; /* Start from top */
+  left: -250px; /* Off-screen to the left */
+  width: 250px; /* Width of the sidebar */
+  height: 100%; 
+  background: #fcfbfbbb; 
+  transition: left 0.3s ease;
+  z-index: 10; 
+}
+
+.nav-links.open {
+  display: flex; /* Show when open */
+  left: 0;
+  padding: 10px; /* Move to visible position */
+}
+
+.links {
+  display: flex;
+  flex-direction: column; /* Stack vertically for mobile */
+}
+
+.link {
+  padding: 15px; /* Padding for links */
+  color: rgb(3, 119, 252);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.link {
+  position: relative;
+  color: rgb(5, 83, 253);
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.link:hover {
+  color: darkblue;
+}
+
+ .links .link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px; 
+  background-color: darkblue; 
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.link:hover::after {
+  transform: translateX(0);
+}
+/* Close button */
+.close-btn {
+  background: none;
+  border: 2px solid;
+  font-size: 30px;
+  color: rgb(3, 119, 252);
+  cursor: pointer;
+  align-self: flex-end;
+  padding: 0 10px;
+  border-radius: 6px;
+}
+
+/* Button styles */
+.nav-button {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.nav-button button {
+  padding: 12px 30px;
+  color: white;
+  background: rgb(3, 119, 252);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav-button button:hover {
+  background: rgb(2, 100, 200);
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 769px) {
+  .menu-icon {
+    display: none; /* Hide on larger screens */
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-links {
+    display: flex; /* Show links in row */
+    flex-direction: row; /* Row direction */
+    position: static; /* Reset position */
+    background: transparent; /* No background on desktop */
+    width: auto;
+    padding: 10px;
+    width: 80%; /* Adjust width */
+  }
+
+  .links {
+    flex-direction: row; /* Row direction for desktop */
+  }
+  .nav-links .links .link{
+    margin-left: 30px;
+    padding: 20 20px;
+    
+  }
+
+  .nav-button {
+    flex-direction: row; /* Row direction for buttons */
+    margin-left: auto; /* Push buttons to the right */
+  }
+
+  .nav-button button {
+    margin-left: 10px; /* Space between buttons */
+  }
+
+  /* Hide the close button on desktop */
+  .close-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    width: 250px; /* Width of the sidebar */
+  }
+
+  .nav-button {
+    width: 100%; /* Full width buttons */
+  }
+
+  .nav-button button {
+    width: 100%; /* Full width buttons */
+    padding:8px 15px;
+    margin: 5px 0; /* Adjust padding */
+  }
+}
+
+@media (max-width: 480px) {
+ 
+  .nav-logo {
+    width: 80%;
+  }
+  .nav-logo .Logo{
+    width: 50%;
+    border: 2px solid rgb(0, 89, 255);
+    border-radius: 10px;
+
+  }
+  .link {
+    padding:16px 5px; /* Adjust padding for smaller screens */
+  }
+
+  
+}
+/* Base Styles for Desktop */
+.home-container {
+  display: flex;
+  padding: 30px;
+  background: #fffffff3;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  animation: exa 1s;
+  transition: 2s;
+}
+
+@keyframes exa {
+  0% {
+    width: 0%;
+    height: auto;
+  }
+  100% {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.home-container .home-welcome {
+  width: 60%;
+  height: auto;
+  padding: 30px;
+  line-height: 3ch;
+  color: black;
+  text-align: center;
+}
+
+.home-container .home-welcome h2 {
+  padding: 10px;
+  font-size: 30px;
+  line-height: 2.5ch;
+  color: rgb(2, 100, 200);
+}
+
+.home-container .home-welcome .home-button {
+  width: 100%;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.home-container .home-welcome .home-button button {
+  width: 40%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background: rgb(2, 100, 200);
+  margin: 0 10px;
+  border-radius: 6px;
+  color: white;
+  font-size: 12px;
+}
+
+.home-container .home-image {
+  width: 40%;
+  height: auto;
+  padding: 30px;
+  border-radius: 20px;
+  background: #ffffffda;
+  text-align: center;
+}
+
+/* Responsive for Tablets and Smaller Devices (768px and below) */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-container .home-welcome, .home-container .home-image {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .home-container .home-welcome h2 {
+    font-size: 24px;
+  }
+
+  .home-container .home-welcome .home-button button {
+    width: 80%;
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+/* Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .home-container .home-welcome, .home-container .home-image {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .home-container .home-welcome h2 {
+    font-size: 18px;
+    line-height: 2ch;
+  }
+
+  .home-container .home-welcome .home-button {
+    padding: 10px;
+  }
+
+  .home-container .home-welcome .home-button button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 12px;
   }
 }

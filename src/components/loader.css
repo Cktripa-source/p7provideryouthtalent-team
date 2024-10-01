@@ -1,0 +1,39 @@
+/* components/Loader.css */
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(182, 215, 236, 0.603); 
+    z-index: 1999;
+  
+  }
+  
+  .loader-image {
+    width: 250px;
+    height: auto;
+    border: 2px solid blue;
+    animation: spin 2s linear infinite;
+    border-radius:50%;
+    box-shadow:10px 5px 30px blue;
+    background:white;
+  }
+  .loader-image:before{
+    content:'';
+    border: 2px solid rgb(15, 15, 15);
+    padding:10px;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
