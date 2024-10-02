@@ -25,11 +25,10 @@ function Nav() {
         <button className="close-btn" onClick={toggleSidebar}>&times;</button>
         <div className="links">
           <Link to="/" className="link">Home</Link>
-          <Link to="/gralley" className="link">Menbers Gralley</Link>
+          <Link to="/gralley" className="link">Members Gallery</Link>
           <Link to="/videos" className="link">Videos</Link>
-          <Link to="/contact" className="link">Contact</Link>
-          <Link to="/about" className="link">About</Link>
           <Link to="/services" className="link">Services</Link>
+           <Link to="/p7record" className="link">P7 Record</Link>
         </div>
         <div className="nav-button">
           <button>Sign In</button>

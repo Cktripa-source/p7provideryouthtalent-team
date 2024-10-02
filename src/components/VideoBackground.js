@@ -9,6 +9,10 @@ const VideoBackground = () => {
         Your browser does not support the video tag.
       </video>
       <div className="content">
+        <div class="search">
+          <input type="text" placeholder="Search..." />
+          <button type="submit">Search</button>
+        </div>
         <h1>P7 Provider Youth Talent <br /> best team</h1>
       </div>
     </div>
