@@ -14,6 +14,7 @@ const Home = () => {
        <button>Watch Videos Stay  Out</button>
      </div>
     </div>
+    <hr />
    </div>
   );
 }
