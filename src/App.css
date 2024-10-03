@@ -313,7 +313,10 @@
     align-items: center;
     justify-content: center;
   }
-
+  .search{
+    width: 100%;
+    margin: 0;
+  }
   .home-container .home-welcome, .home-container .home-image {
     width: 100%;
     padding: 20px;
@@ -371,6 +374,8 @@
 .contact-us-inbox .video-youtube iframe{
   margin: 50px 0;
   border-radius: 30px;
+  height: 400px;
+  width: 100%;
 }
 
 .contact-us-inbox p {

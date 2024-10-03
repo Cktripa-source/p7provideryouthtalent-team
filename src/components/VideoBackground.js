@@ -10,7 +10,7 @@ const VideoBackground = () => {
       </video>
       <div className="content">
         <div class="search">
-          <input type="text" placeholder="Search..." />
+          <input type="text" placeholder="P7 Provider Youth Talent Search Anything ........" />
           <button type="submit">Search</button>
         </div>
         <h1>P7 Provider Youth Talent <br /> best team</h1>

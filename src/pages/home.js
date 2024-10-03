@@ -11,7 +11,7 @@ const Home = () => {
             <p>Phone: 📞 +250791855396</p>
             <p>Address: Rukoko, Rubavu, Rwanda</p>
             <div class="video-youtube">
-              <iframe width="450" height="415" src="https://www.youtube.com/embed/VdeaV0dV3J4?si=bBC_eycklQ1DrRCq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/VdeaV0dV3J4?si=bBC_eycklQ1DrRCq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     </div>
