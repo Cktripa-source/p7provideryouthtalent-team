@@ -18,147 +18,105 @@ const Gralley = () => {
       <div className="cards-container">
       <ImageCard 
           images={[Ceo1,Ceo2,Ceo3]}
-          title="Project One"
-          description="This is a brief description of project one."
+          title="CEO & FOUNDER"
+          description="I'm the ceo & fonder of this this P7YT Team."
         />
         <ImageCard 
           images={[Sec1,Sec2,Sec3]}
-          title="Project Two"
-          description="This is a brief description of project two."
+          title="SECRETARY"
+          description="I'm the hold of secretary in P7YT Team."
         />
         <ImageCard 
           images={[Celdencer1,Celdencer2,Celdencer3]}
-          title="Project One"
-          description="This is a brief description of project one."
+          title="CELINE"
+          description="I'm the best dancer in P7YT Team ."
         />
         <ImageCard 
           images={[Aline1,Aline2,Aline3]}
-          title="Project Two"
-          description="This is a brief description of project two."
+          title="ALINE"
+          description="I'm best film actor in P7YT Team ."
+        />
+        <ImageCard 
+          images={[Ceo1,Ceo2,Ceo3]}
+          title="CEO & FOUNDER"
+          description="I'm the ceo & fonder of this this P7YT Team."
+        />
+        <ImageCard 
+          images={[Sec1,Sec2,Sec3]}
+          title="SECRETARY"
+          description="I'm the hold of secretary in P7YT Team."
+        />
+        <ImageCard 
+          images={[Celdencer1,Celdencer2,Celdencer3]}
+          title="CELINE"
+          description="I'm the best dancer in P7YT Team ."
+        />
+        <ImageCard 
+          images={[Aline1,Aline2,Aline3]}
+          title="ALINE"
+          description="I'm best film actor in P7YT Team ."
+        />
+        <ImageCard 
+          images={[Ceo1,Ceo2,Ceo3]}
+          title="CEO & FOUNDER"
+          description="I'm the ceo & fonder of this this P7YT Team."
+        />
+        <ImageCard 
+          images={[Sec1,Sec2,Sec3]}
+          title="SECRETARY"
+          description="I'm the hold of secretary in P7YT Team."
+        />
+        <ImageCard 
+          images={[Celdencer1,Celdencer2,Celdencer3]}
+          title="CELINE"
+          description="I'm the best dancer in P7YT Team ."
+        />
+        <ImageCard 
+          images={[Aline1,Aline2,Aline3]}
+          title="ALINE"
+          description="I'm best film actor in P7YT Team ."
+        />
+        <ImageCard 
+          images={[Ceo1,Ceo2,Ceo3]}
+          title="CEO & FOUNDER"
+          description="I'm the ceo & fonder of this this P7YT Team."
+        />
+        <ImageCard 
+          images={[Sec1,Sec2,Sec3]}
+          title="SECRETARY"
+          description="I'm the hold of secretary in P7YT Team."
+        />
+        <ImageCard 
+          images={[Celdencer1,Celdencer2,Celdencer3]}
+          title="CELINE"
+          description="I'm the best dancer in P7YT Team ."
+        />
+        <ImageCard 
+          images={[Aline1,Aline2,Aline3]}
+          title="ALINE"
+          description="I'm best film actor in P7YT Team ."
+        />
+        <ImageCard 
+          images={[Ceo1,Ceo2,Ceo3]}
+          title="CEO & FOUNDER"
+          description="I'm the ceo & fonder of this this P7YT Team."
+        />
+        <ImageCard 
+          images={[Sec1,Sec2,Sec3]}
+          title="SECRETARY"
+          description="I'm the hold of secretary in P7YT Team."
+        />
+        <ImageCard 
+          images={[Celdencer1,Celdencer2,Celdencer3]}
+          title="CELINE"
+          description="I'm the best dancer in P7YT Team ."
+        />
+        <ImageCard 
+          images={[Aline1,Aline2,Aline3]}
+          title="ALINE"
+          description="I'm best film actor in P7YT Team ."
         />
         
-        <ImageCard 
-          images={[Ceo1,Ceo2,Ceo3]}
-          title="Project One"
-          description="This is a brief description of project one."
-        />
-        <ImageCard 
-          images={[Sec1,Sec2,Sec3]}
-          title="Project Two"
-          description="This is a brief description of project two."
-        />
-        <ImageCard 
-          images={[Celdencer1,Celdencer2,Celdencer3]}
-          title="Project One"
-          description="This is a brief description of project one."
-        />
-        <ImageCard 
-          images={[Aline1,Aline2,Aline3]}
-          title="Project Two"
-          description="This is a brief description of project two."
-        />
-        
-        <ImageCard 
-          images={[Ceo1,Ceo2,Ceo3]}
-          title="Project One"
-          description="This is a brief description of project one."
-        />
-        <ImageCard 
-          images={[Sec1,Sec2,Sec3]}
-          title="Project Two"
-          description="This is a brief description of project two."
-        />
-        <ImageCard 
-          images={[Celdencer1,Celdencer2,Celdencer3]}
-          title="Project One"
-          description="This is a brief description of project one."
-        />
-        <ImageCard 
-          images={[Aline1,Aline2,Aline3]}
-          title="Project Two"
-          description="This is a brief description of project two."
-        />
-        
-        <ImageCard 
-          images={[Ceo1,Ceo2,Ceo3]}
-          title="Project One"
-          description="This is a brief description of project one."
-        />
-        <ImageCard 
-          images={[Sec1,Sec2,Sec3]}
-          title="Project Two"
-          description="This is a brief description of project two."
-        />
-        <ImageCard 
-          images={[Celdencer1,Celdencer2,Celdencer3]}
-          title="Project One"
-          description="This is a brief description of project one."
-        />
-        <ImageCard 
-          images={[Aline1,Aline2,Aline3]}
-          title="Project Two"
-          description="This is a brief description of project two."
-        />
-        <ImageCard 
-          images={[Ceo1,Ceo2,Ceo3]}
-          title="Project One"
-          description="This is a brief description of project one."
-        />
-        <ImageCard 
-          images={[Sec1,Sec2,Sec3]}
-          title="Project Two"
-          description="This is a brief description of project two."
-        />
-        <ImageCard 
-          images={[Celdencer1,Celdencer2,Celdencer3]}
-          title="Project One"
-          description="This is a brief description of project one."
-        />
-        <ImageCard 
-          images={[Aline1,Aline2,Aline3]}
-          title="Project Two"
-          description="This is a brief description of project two."
-        />
-        <ImageCard 
-          images={[Ceo1,Ceo2,Ceo3]}
-          title="Project One"
-          description="This is a brief description of project one."
-        />
-        <ImageCard 
-          images={[Sec1,Sec2,Sec3]}
-          title="Project Two"
-          description="This is a brief description of project two."
-        />
-        <ImageCard 
-          images={[Celdencer1,Celdencer2,Celdencer3]}
-          title="Project One"
-          description="This is a brief description of project one."
-        />
-        <ImageCard 
-          images={[Aline1,Aline2,Aline3]}
-          title="Project Two"
-          description="This is a brief description of project two."
-        />
-        <ImageCard 
-          images={[Ceo1,Ceo2,Ceo3]}
-          title="Project One"
-          description="This is a brief description of project one."
-        />
-        <ImageCard 
-          images={[Sec1,Sec2,Sec3]}
-          title="Project Two"
-          description="This is a brief description of project two."
-        />
-        <ImageCard 
-          images={[Celdencer1,Celdencer2,Celdencer3]}
-          title="Project One"
-          description="This is a brief description of project one."
-        />
-        <ImageCard 
-          images={[Aline1,Aline2,Aline3]}
-          title="Project Two"
-          description="This is a brief description of project two."
-        />
         
       </div>
     </div>
